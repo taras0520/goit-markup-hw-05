@@ -671,7 +671,7 @@ img {
 .modal-form {
 }
 .modal-field {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .modal-label {
   font-size: 12px;
@@ -751,17 +751,74 @@ img {
   border-radius: 4px;
   border-color: var(--color-logo);
 }
+.modal-comment-check {
+  margin-bottom: 24px;
+}
+
 .input-check {
+}
+.input-check:checked + .check-label .check-text {
+  background-color: var(--underline-color);
+  border: none;
+  fill: var(--color-footer-text);
 }
 .visually-hidden {
 }
 .check-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--customers-color);
+}
+.check-label .user-privacy {
+  line-height: 1.33;
+  text-decoration-line: underline;
+  color: var(--color-logo);
 }
 .check-text {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color var(--animation1), border var(--animation1),
+    fill var(--animation1);
 }
-.check-icon {
+.check-text a {
+  color: var(--color-logo);
+  text-decoration: underline;
 }
-.user-privacy {
+
+.check-text span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--underline-color);
+  border-radius: 2px;
 }
-.sumbit-btn {
+.submit-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 169px;
+  height: 56px;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color-logo);
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--bg-color);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color var(--animation1);
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: var(--underline-color);
 }
